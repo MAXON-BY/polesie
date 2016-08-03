@@ -12,6 +12,13 @@ $(function() {
 		arrows: true
 	});
 
+	//tabs BRAND
+	$("#brand .tab_item").not(":first").hide();
+	$("#brand .tab").click(function() {
+		$("#brand .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$("#brand .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
