@@ -1,5 +1,16 @@
 $(function() {
 
+	// Create a new instance of Headhesive
+	var options = {
+		offset: 500
+	};
+	var header = new Headhesive('.header', options);
+
+	$(".wrap-catalog-btn p").click(function(){
+		$(".headhesive .main-nav").toggle();
+	});
+
+
 	//SLICK slider
 	$('.slick-slider').slick({
 		accessibility: true,

@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 
 	<title>Полесье Онлайн-гипермаркет</title>
-	<meta name="description" content="">
+	<meta name="description" content="#">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -25,6 +25,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
+	<script src="libs/modernizr/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -32,150 +34,159 @@
 	<div id="wrap">
 
 		<!-- header -->
+		<div class="header">
 		<header>
-			<!-- top line -->
-			<div class="top-line">
-				<div class="top-line-region">
-					<p><a href="#regions_hidden">Минск, Минская область</a></p>
-				</div>
 
-				<div class="top-line-nav">
-					<nav>
-						<ul>
-							<li><a href="#">Доставка и оплата</a></li>
-							<li><a href="#">Частые вопросы</a></li>
-							<li><a href="#">Новости и акции</a></li>
-							<li><a href="#">Ещё...</a>
-								<ul class="drop-line-nav">
-									<li><a href="#">Как заказать</a></li>
-									<li><a href="#">Возврат</a></li>
-									<li><a href="#">Оферта</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				<!-- top line -->
+				<div class="top-line">
+					<div class="top-line-region">
+						<p><a href="#regions_hidden">Минск, Минская область</a></p>
+					</div>
 
-				<div class="top-line-call">
-					<p><span>+375 29 605 05 05</span> - или <a href="#">обратный звонок</a></p>
-				</div>
-			</div>
+					<div class="top-line-nav">
+						<nav>
+							<ul>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Частые вопросы</a></li>
+								<li><a href="#">Новости и акции</a></li>
+								<li><a href="#">Ещё...</a>
+									<ul class="drop-line-nav">
+										<li><a href="#">Как заказать</a></li>
+										<li><a href="#">Возврат</a></li>
+										<li><a href="#">Оферта</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
 
-			<!-- line -->
-			<div class="line">
-				<!-- logo -->
-				<div class="line-wrap-logo">
-					<img class="logo" src="img/logo.svg" alt="Полесье">
-					<div class="logo-market">
-						<p class="market">Market</p>
-						<p class="bigmarket">Онлайн-гипермаркет</p>
+					<div class="top-line-call">
+						<p><span>+375 29 605 05 05</span> - или <a href="#">обратный звонок</a></p>
 					</div>
 				</div>
 
-				<!-- search -->
-				<div class="line-search-form">
-					<form action="" method="post">
-						<input type="search" name="search" placeholder="Поиск по 200 000 товарам, разделам и артикулам">
-						<input type="submit" value="Найти">
-					</form>
-				</div>
+				<!-- line -->
+				<div class="line">
+					<!-- logo -->
+					<div class="line-wrap-logo">
 
-				<!-- tools -->
-				<div class="line-tools">
-					<div class="tools-comparison" data-title="Список сравнения пуст"></div>
-					<div class="tools-defer" data-title="Список отложенных товаров пуст"></div>
+						<div class="wrap-logo">
+							<img class="logo" src="img/logo.svg" alt="Полесье">
+							<div class="logo-market">
+								<p class="market">Market</p>
+								<p class="bigmarket">Онлайн-гипермаркет</p>
+							</div>
+						</div>
 
-					<div class="account">
-						<a href="#">Личный кабинет</a>
+						<div class="wrap-catalog-btn">
+							<p>Каталог продукции</p>
+						</div>
+					</div>
+
+					<!-- search -->
+					<div class="line-search-form">
+						<form action="" method="post">
+							<input type="search" name="search" placeholder="Поиск по 200 000 товарам, разделам и артикулам">
+							<input type="submit" value="Найти">
+						</form>
+					</div>
+
+					<!-- tools -->
+					<div class="line-tools">
+						<div class="tools-comparison" data-title="Список сравнения пуст"></div>
+						<div class="tools-defer" data-title="Список отложенных товаров пуст"></div>
+
+						<div class="account">
+							<a href="#">Личный кабинет</a>
+						</div>
+					</div>
+
+					<!-- cart -->
+					<div class="line-cart">
+						<a class="cart" data-title="Ваша корзина совершенно пуста" href="#">Корзина <span>0</span></a>
+
+						<!-- cart_list_hidden -->
+						<div class="cart_list_hidden">
+
+							<div class="cart_list_block_scroll">
+								<div class="cart_list_block">
+									<img src="img/promo/cart_list.jpg" alt="#">
+									<div class="cart_list_descr">
+
+										<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
+										<p>Цвет: черный</p>
+										<p>Кол-во: 1 шт.</p>
+
+										<div class="cart_list_coast">
+											<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
+											<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
+										</div>
+
+									</div>
+								</div>
+								<div class="cart_list_block">
+									<img src="img/promo/cart_list.jpg" alt="#">
+									<div class="cart_list_descr">
+
+										<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
+										<p>Цвет: черный</p>
+										<p>Кол-во: 1 шт.</p>
+
+										<div class="cart_list_coast">
+											<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
+											<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
+										</div>
+
+									</div>
+								</div>
+								<div class="cart_list_block">
+									<img src="img/promo/cart_list.jpg" alt="#">
+									<div class="cart_list_descr">
+
+										<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
+										<p>Цвет: черный</p>
+										<p>Кол-во: 1 шт.</p>
+
+										<div class="cart_list_coast">
+											<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
+											<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
+										</div>
+
+									</div>
+								</div>
+								<div class="cart_list_block">
+									<img src="img/promo/cart_list.jpg" alt="#">
+									<div class="cart_list_descr">
+
+										<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
+										<p>Цвет: черный</p>
+										<p>Кол-во: 1 шт.</p>
+
+										<div class="cart_list_coast">
+											<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
+											<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="cart_total">
+								<p>Итого: <span>4 466,60 р. <span> 44 666 000 р</span></span></p>
+							</div>
+
+							<div class="cart_buttons">
+								<a class="cart_incart" href="#">Перейти в корзину</a>
+								<a class="cart_content" href="#">Оформить заказ</a>
+							</div>
+
+						</div>
 					</div>
 				</div>
 
-				<!-- cart -->
-				<div class="line-cart">
-					<a class="cart" data-title="Ваша корзина совершенно пуста" href="#">Корзина <span>0</span></a>
-
-					<!-- cart_list_hidden -->
-					<div class="cart_list_hidden">
-
-						<div class="cart_list_block_scroll">
-							<div class="cart_list_block">
-								<img src="img/promo/cart_list.jpg" alt="#">
-								<div class="cart_list_descr">
-
-									<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
-									<p>Цвет: черный</p>
-									<p>Кол-во: 1 шт.</p>
-
-									<div class="cart_list_coast">
-										<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
-										<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
-									</div>
-
-								</div>
-							</div>
-							<div class="cart_list_block">
-								<img src="img/promo/cart_list.jpg" alt="#">
-								<div class="cart_list_descr">
-
-									<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
-									<p>Цвет: черный</p>
-									<p>Кол-во: 1 шт.</p>
-
-									<div class="cart_list_coast">
-										<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
-										<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
-									</div>
-
-								</div>
-							</div>
-							<div class="cart_list_block">
-								<img src="img/promo/cart_list.jpg" alt="#">
-								<div class="cart_list_descr">
-
-									<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
-									<p>Цвет: черный</p>
-									<p>Кол-во: 1 шт.</p>
-
-									<div class="cart_list_coast">
-										<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
-										<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
-									</div>
-
-								</div>
-							</div>
-							<div class="cart_list_block">
-								<img src="img/promo/cart_list.jpg" alt="#">
-								<div class="cart_list_descr">
-
-									<p class="cart_list_name">Samsung Galaxy S6 Edge 32Gb</p>
-									<p>Цвет: черный</p>
-									<p>Кол-во: 1 шт.</p>
-
-									<div class="cart_list_coast">
-										<p class="hits_coast_new">10 435,60 р. <span> 10 435 600 р</span></p>
-										<p class="hits_coast old">13 435,60 р. <span> 13 435 600 р</span></p>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="cart_total">
-							<p>Итого: <span>4 466,60 р. <span> 44 666 000 р</span></span></p>
-						</div>
-
-						<div class="cart_buttons">
-							<a class="cart_incart" href="#">Перейти в корзину</a>
-							<a class="cart_content" href="#">Оформить заказ</a>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- main-nav -->
-			<div class="main-nav">
+				<!-- main-nav -->
+				<div class="main-nav">
 				<nav class="nav">
 					<ul>
 						<li><a href="#">Твары для детей</a></li>
@@ -258,7 +269,9 @@
 					</ul>
 				</nav>
 			</div>
+
 		</header>
+		</div>
 
 		<!-- promo / slider - banners -->
 		<section>
@@ -504,7 +517,7 @@
 					<div class="slick-slider-discount-hits">
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -539,7 +552,7 @@
 						</div>
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -574,7 +587,7 @@
 						</div>
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -609,7 +622,7 @@
 						</div>
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -644,7 +657,7 @@
 						</div>
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -679,7 +692,7 @@
 						</div>
 
 						<!-- slider - block -->
-						<div class="slider_block">
+						<div class="slider_block hits-bg">
 							<!-- discount_block hit -->
 							<div class="hits_block_wrap">
 								<div class="hits_block">
@@ -2061,8 +2074,8 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="libs/headhesive/headhesive.min.js"></script>
 
-	
 	<script src="js/common.js"></script>
 	
 </body>
